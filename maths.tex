@@ -17,4 +17,12 @@ This concept is to help you gauge if you're ready for Exam P
 \subsubsection{examples}$d/dx 5x^5=25x^4 $ this is proven by the power rule $ nx^n-1 $
 
 
+\section{integrals}
+\subsection{problem 1}
+\subsubsection{Integration by parts}
+\textbf{problem statement} \\
+For what value of $c$ is it true that $\int_{0}^{1} c x^2 e^{2x} dx = 1$ \\
+\textbf{problem solution} \\
+$\int_{0}^{1} c x^2 e^{2x} dx = c \int_{0}^{1} x^2 e^{2x} dx = 1$ implies that $c = (\int_{0}^{1} x^2 e^{2x} dx)^{-1}$. By solving the integral $\int_{0}^{1} x^2 e^{2x} dx $ we can then solve for $c$. This integral is solved using integration by parts, $\int u \cdot dv = uv - \int v \cdot du$. We let $u = x^2$, $dv = e^{2x}$. $\int x^2 e^{2x} dx = \frac{1}{2}x^2 e^{2x} - \int x e^{2x}$. We integrate by parts again to solve for $\int x e^{2x}$, letting $u = x, dv = e^{2x}$. $\int x e^{2x} dx = \frac{1}{2}x e^{2x} - \int \frac{1}{2}e^{2x}$. We solve $\int \frac{1}{2}e^{2x} = \frac{1}{4}e^{2x}$. Putting this all together, $\int_{0}^{1} x^2 e^{2x} dx = \frac{1}{2}e^{2x}(x^2-x+\frac{1}{2}) \big|_0^1 = \frac{1}{4}(e^2-1)$. We now solve $c = \frac{\displaystyle{4}}{\displaystyle{e^2-1}}$
+
 \end{document}
